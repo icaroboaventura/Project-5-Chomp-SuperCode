@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Nunito;
+  src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Rock Salt;
+  src: url(../font/RockSalt-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #df8480;
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-footer: #242424;
+  --clr-placeholder: #7b7b7b;
+
+  --fs-logo: 1.5rem;
+  --fs-h1: 2.25rem;
+  --fs-h2: 3rem;
+}
+
+.body_wrapper {
+  max-width: 75rem;
+  margin-inline: auto;
+}
+
+/* general styles  */
+
+h1,
+h2,
+p,
+input {
+  font-family: Nunito;
+}
+
+h2 {
+  color: var(--clr-main);
+  font-size: clamp(1rem, 2vw + 1rem, 3rem);
+  font-weight: 900;
+}
+
+p {
+  color: var(--clr-black);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* header style */
+
+.logo {
+  font-family: Rock Salt;
+  display: flex;
+  justify-content: center;
+}
+
+.logo a {
+  padding-block: 1.5rem;
+  text-decoration: none;
+  color: var(--clr-black);
+  font-size: clamp(1rem, 0.5vw + 1rem, 1.5rem);
+}
+
+.hero {
+  display: flex;
+  max-width: 100%;
+}
+
+.hero_text {
+  background-color: var(--clr-main);
+}
