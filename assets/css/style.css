@@ -23,7 +23,11 @@
 
   --fs-logo: 1.5rem;
   --fs-h1: 2.25rem;
+  --fs-h1-phone: 1rem:
+  --fs-p: 1rem;
   --fs-h2: 3rem;
+
+
 }
 
 .body_wrapper {
@@ -40,9 +44,15 @@ input {
   font-family: Nunito;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: var(--fs-h1);
+  color: var(--clr-white);
+}
+
 h2 {
   color: var(--clr-main);
-  font-size: clamp(1rem, 2vw + 1rem, 3rem);
+  font-size: var(--fs-h2);
   font-weight: 900;
 }
 
@@ -50,6 +60,10 @@ p {
   color: var(--clr-black);
   font-size: 1rem;
   font-weight: 700;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* header style */
@@ -70,8 +84,27 @@ p {
 .hero {
   display: flex;
   max-width: 100%;
+  min-height: 31.25rem;
 }
 
 .hero_text {
   background-color: var(--clr-main);
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.hero_text h1 {
+  max-width: 11.875rem;
+  margin: 4%;
+}
+
+.hero_img {
+  flex: 1;
+  background: url(../img/hero_dog_img.png) no-repeat center;
+  background-size: cover;
+}
+
+.hero_img h1 {
+  display: none;
 }
